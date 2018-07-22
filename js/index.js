@@ -15,7 +15,6 @@ $("document").ready(function(){
     goal= prompt("Set a daily goal in " + unit, 64 )
   });
   
-  console.log(typeof goal)
   //log Water
   $("#logWater").click( function(){
     glassNum++;
@@ -26,7 +25,10 @@ $("document").ready(function(){
     var newDiv = "<div class='newWater'></div>";
     var height = 50 * glassNum;
     $("#water").append(newDiv);
-    $(".newWater:last").css("height",height + "px");
+   var dateTime = getDate();
+    var waterAmount = $("<p></p>").text(addWater + unit);
+    $(".newWater:last").css("height",height + "px").text(dateTime).append(waterAmount);
+    
     
   });
   //show total
@@ -46,5 +48,13 @@ $("document").ready(function(){
       
     
   });
-  
+  //get current date and time
+  function getDate(){
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var time = today.getHours() + ":" + today.getMinutes();
+return date +' '+ time;
+  }
 });
