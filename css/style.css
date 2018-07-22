@@ -1,0 +1,143 @@
+:root{
+  --d-blue: #212786;
+  --m-blue: #5163c2;
+  --l-blue: #b2bae4;
+  --bg-blue: #edf3fe;
+  --gold:#df8b1a;
+}
+body{
+  background:var(--bg-blue);
+ 
+}
+/*border bars*/
+.bars{
+  height:10px;
+  
+}
+.darkBar{
+  background: var(--d-blue);
+}
+.mediumBar{
+  background:var(--m-blue);
+}
+.lightBar{
+  background:var(--l-blue);
+}
+.lightestBar{
+  background:var(--l-blue);
+  opacity:0.3; 
+}
+.bottomBars{
+   position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*menu*/
+#menu{
+  margin-top:-40px;
+  height:50px;
+}
+#settings{
+  position:fixed;
+  color: var(--gold);
+  font-size: 50px;
+  margin-top: -60px;
+  padding:5px;
+  z-index:2;
+  background: none;
+  border:none;
+}
+#settings:hover{
+  background: rgba(255,255,255,0.2);
+  
+  
+}
+.menu-btn{
+position: absolute;
+font-family: Quicksand;
+font-weight: bold;
+line-height: normal;
+text-align: center;
+color: var(--gold);
+background: rgba(178, 186, 228, 0.5);
+border: 1px solid var(--d-blue);
+box-sizing: border-box;
+box-shadow: inset 5px 4px 8px rgba(81, 99, 194, 0.85);
+border-radius: 100px;
+  z-index:3;
+}
+#reset{
+  font-size: 22px;
+  width: 67px;
+height: 67px;
+left: 7px;
+top: 108px;
+}
+#dailyTotal{
+  width: 75px;
+height: 74px;
+left: 54px;
+top: 44px;
+  font-size: 22px;
+}
+#logWater{
+  width: 90px;
+height: 89px;
+left: 141px;
+top: 10px;
+  font-size:24px;
+}
+#setGoal{
+  width: 75px;
+height: 74px;
+left: 242px;
+top: 43px;
+  font-size: 24px;
+}
+#clean{
+  width: 67px;
+height: 67px;
+left: 298px;
+top: 108px;
+font-size: 20px;
+}
+
+/*Text*/
+#title{
+margin-bottom:-10px;
+  font-size: 36px;
+}
+#title, .menu-btn, .title{
+font-family: Quicksand;
+font-weight: bold;
+color: var(--gold);
+text-shadow: 1px 1px 3px var(--d-blue);
+}
+/*glass*/
+#main{
+  height:455px;
+}
+#glassImg{
+  margin-top:80px;
+  margin-left:45px;
+  height:440px;
+  width:216px;
+    z-index:1;
+ 
+}
+.newWater{
+  position:absolute;
+background: rgba(178, 186, 228, 0.13);
+border-radius: 43px 43px 0px 0px;
+  height:50px;
+  width:214px;
+  margin-left:45px;
+  z-index:-1;
+  bottom:0;
+  
+}
+
+/*div{
+  border:solid 1px black;
+}*/
