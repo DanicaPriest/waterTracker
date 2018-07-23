@@ -4,10 +4,16 @@ $("document").ready(function(){
   var newWater;
   var goalReached = false;
   var archive = [];
-  var unit = "onces";
+  var unit = "oz";
   var newUser = true;
   var addWater;
   var glassNum = 0;
+  
+  //settings
+  $("input[type='radio']").on('click', function(){
+        unit = $("input[name='unit']:checked").val();
+        
+    });
   
   
   //set goal
@@ -28,17 +34,22 @@ $("document").ready(function(){
    var dateTime = getDate();
     var waterAmount = $("<p></p>").text(addWater + unit);
     $(".newWater:last").css("height",height + "px").text(dateTime).append(waterAmount);
+    archive.push(dateTime + " - " + addWater + unit);
     
     
   });
   //show total
   $("#dailyTotal").click( function(){
-    if(goal == total){
+    if(goal == 0){
+      alert("You have had " + total + unit +" of water today. Click on the Goal button to set a daily goal.");
+      
+    }
+    else if(goal == total){
       alert("Congrats! You have reached your daily water goal! Way to be hydrated");
       goalReached = true;
     }
     else if(goal > total){
-    alert("You have had " + total + " onces of water today. You need " + (goal - total) + " more onces to reach your total.");
+    alert("You have had " + total + unit + " of water today. You need " + (goal - total) + " more "+ unit +" to reach your total.");
     }
     else if(total > 299){
       alert("You have had "+ total + " " + unit + " of water today. You are in danger of hyponatremia (too much water). You can stop drinking now!")}
