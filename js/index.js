@@ -31,7 +31,7 @@ $("document").ready(function(){
     var newDiv = "<div class='newWater'></div>";
     var height = 50 * glassNum;
     $("#water").append(newDiv);
-   var dateTime = getDate();
+   var dateTime = getNewDate();
     var waterAmount = $("<p></p>").text(addWater + unit);
     $(".newWater:last").css("height",height + "px").text(dateTime).append(waterAmount);
     archive.push(dateTime + " - " + addWater + unit);
@@ -60,11 +60,9 @@ $("document").ready(function(){
     
   });
   //get current date and time
-  function getDate(){
+  function getNewDate(){
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var time = today.getHours() + ":" + today.getMinutes();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 var time = today.getHours() + ":" + today.getMinutes();
 return date +' '+ time;
   }

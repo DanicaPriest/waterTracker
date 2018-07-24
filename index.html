@@ -50,15 +50,54 @@
 
   </div>
 </div>
+  <!-- Reset Modal -->
+  <div id="resetModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Reset Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        <button id="resetDay" class="btn"> Reset Day</button>
+        <button id="clearAll" class="btn"> Clear All Data</button>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></form>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Archive Modal -->
+<div id="archiveModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Archive Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="title">Archive</h4>
+      </div>
+      <div class="modal-body">
+        Some text in the modal.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--End of Modals -->
   <div class="container-fluid">
   <div class="row">
     <div class="col-sm-3"></div>
   <div id="menu" class="col-sm-6">
-    <button class="menu-btn" id="reset">Reset</button>
+    <button class="menu-btn" id="reset" data-toggle="modal" data-target="#resetModal">Reset</button>
       <button class="menu-btn" id="dailyTotal">Total</button>
         <button class="menu-btn" id="logWater">Log</button>
           <button class="menu-btn" id="setGoal">Goal</button>
-            <button class="menu-btn" id="clean">Archive</button>
+            <button class="menu-btn" id="clean" data-toggle="modal" data-target="#archiveModal">Archive</button>
     </div></div>
   <div class="container-fluid">
     <div class="row" id="main">
