@@ -23,6 +23,9 @@ $("document").ready(function(){
   
   //log Water
   $("#logWater").click( function(){
+    if(glassNum >= 8){
+      resetGlass();
+    }
     glassNum++;
     //add new water to total
     addWater = parseInt(prompt("Add water amount in onces:", 8));
@@ -34,6 +37,7 @@ $("document").ready(function(){
    var dateTime = getNewDate();
     var waterAmount = $("<p></p>").text(addWater + unit);
     $(".newWater:last").css("height",height + "px").text(dateTime).append(waterAmount);
+    //add logged water to archive
     archive.push(dateTime + " - " + addWater + unit);
     
     
@@ -59,6 +63,12 @@ $("document").ready(function(){
       
     
   });
+  //archive button
+  $("#clean").click( function(){
+    for(var i = 0; i < archive.length; i++){
+    $("#archiveBody").prepend($("<p></p>").text(archive[i]));
+    }
+  });
   //get current date and time
   function getNewDate(){
     var today = new Date();
@@ -66,4 +76,25 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 var time = today.getHours() + ":" + today.getMinutes();
 return date +' '+ time;
   }
+  //reset Day
+  $("#resetDay").click( function(){
+    resetVars();
+    resetGlass();
+  });
+  //clear all data
+  $("#clearAll").click( function(){ 
+    resetVars();
+    resetGlass();
+    archive= [];
+  });
+  function resetVars(){
+    total=0;
+    goal=0;
+    addWater = 0;
+  }
+  function resetGlass(){
+    glassNum = 0;
+    $(".newWater").remove();
+  }
+  
 });

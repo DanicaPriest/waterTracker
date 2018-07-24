@@ -32,7 +32,27 @@ body{
     bottom: 0;
     width: 100%;
 }
-
+/*modal*/
+.btn{
+  background:var(--d-blue);
+  color:var(--bg-blue);
+  font-family: Quicksand;
+font-weight: bold;
+text-shadow: 1px 1px 1px var(--gold);
+}
+.modal-header{
+  background:var(--bg-blue);
+}
+h6{
+  color:(--bg-blue);  
+}
+.modal-body{
+  background:var(--l-blue);
+  
+}
+.modal-footer{
+  background:var(--m-blue);
+}
 /*menu*/
 #menu{
   margin-top:-40px;
@@ -50,6 +70,7 @@ body{
 }
 #settings:hover{
   background: rgba(255,255,255,0.2);
+  cursor: pointer;
   
   
 }
@@ -66,6 +87,10 @@ box-sizing: border-box;
 box-shadow: inset 5px 4px 8px rgba(81, 99, 194, 0.85);
 border-radius: 100px;
   z-index:3;
+}
+.menu-btn:hover{
+  background:none;
+  cursor: pointer;
 }
 #reset{
   font-size: 22px;
@@ -104,16 +129,18 @@ font-size: 15px;
 }
 
 /*Text*/
-#title{
-margin-bottom:-10px;
-  font-size: 36px;
-}
 #title, .menu-btn, .title{
 font-family: Quicksand;
 font-weight: bold;
 color: var(--gold);
-text-shadow: 1px 1px 3px var(--d-blue);
+text-shadow: 1px 1px 1px var(--d-blue);
 }
+#title{
+margin-bottom:-10px;
+  font-size: 36px;
+  text-shadow: 1px 1px 3px var(--d-blue);
+}
+
 /*glass*/
 #main{
   height:455px;
@@ -140,6 +167,4 @@ border-radius: 43px 43px 0px 0px;
   
 }
 
-/*div{
-  border:solid 1px black;
-}*/
+
