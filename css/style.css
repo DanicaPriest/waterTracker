@@ -39,6 +39,15 @@ body{
   font-family: Quicksand;
 font-weight: bold;
 text-shadow: 1px 1px 1px var(--gold);
+  border: outset 2px var(--gold);
+}
+.btn:hover{
+  border: inset 2px var(--gold);
+  text-shadow: 2px 2px 2px var(--d-blue);
+  background: var(--m-blue);
+}
+.modal-content{
+  border: outset 4px var(--gold);
 }
 .modal-header{
   background:var(--bg-blue);
@@ -155,7 +164,7 @@ margin-bottom:-10px;
 }
 .newWater{
   position:absolute;
-background: rgba(178, 186, 228, 0.13);
+background: rgba(33, 39, 134, 0.13);
 border-radius: 43px 43px 0px 0px;
   height:50px;
   width:214px;
