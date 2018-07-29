@@ -175,5 +175,14 @@ border-radius: 43px 43px 0px 0px;
   color: var(--d-blue);
   
 }
-
+/*media tags*/
+@media screen and (min-width: 726px){
+	
+}
+@media screen and (max-height:645px){
+	.bottomBars{
+		position:static;
+		margin-top:10%;
+	
+}
 
