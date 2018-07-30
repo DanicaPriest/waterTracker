@@ -37,6 +37,9 @@ I would find and use an existing api to check the water conditions in the user's
 <strong>Gamify:</strong><br>
 Adding rewards and challenges to motivate the user to reach their daily goals.
 
+<strong>Unit changing:</strong> <br>
+At the moment if the user changes the measuring unit after logging in a different unit during the same day the total button doesn't reflect the change and adds the total as if they were all the same unit. 
+
 # Languages and frameworks used
 
 <strong>Wireframes-</strong>Figma I used figma (https://www.figma.com)<br>
