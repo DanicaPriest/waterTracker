@@ -65,6 +65,7 @@ $("document").ready(function(){
   });
   //archive button
   $("#clean").click( function(){
+    $("#archiveBody").empty();
     for(var i = 0; i < archive.length; i++){
     $("#archiveBody").prepend($("<p></p>").text(archive[i]));
     }
@@ -86,6 +87,7 @@ return date +' '+ time;
     resetVars();
     resetGlass();
     archive= [];
+    
   });
   function resetVars(){
     total=0;

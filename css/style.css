@@ -65,7 +65,7 @@ h6{
 /*menu*/
 #menu{
   margin-top:-40px;
-  height:50px;
+  
 }
 #settings{
   position:fixed;
@@ -151,12 +151,10 @@ margin-bottom:-10px;
 }
 
 /*glass*/
-#main{
-  height:455px;
-}
+
 #glassImg{
-  margin-top:80px;
-  margin-left:45px;
+  margin-top:120px;
+  margin-left:65px;
   height:440px;
   width:216px;
     z-index:1;
@@ -168,7 +166,7 @@ background: rgba(33, 39, 134, 0.13);
 border-radius: 43px 43px 0px 0px;
   height:50px;
   width:214px;
-  margin-left:45px;
+  margin-left:65px;
   z-index:-1;
   bottom:0;
   text-align: center;
@@ -178,11 +176,26 @@ border-radius: 43px 43px 0px 0px;
 /*media tags*/
 @media screen and (min-width: 726px){
 	
+	
 }
 @media screen and (max-height:645px){
 	.bottomBars{
 		position:static;
-		margin-top:10%;
+		margin-top:1%;
+	}
 	
 }
-
+@media screen and (min-height:645px){
+	#glassImg, .newWater{
+  margin-top:150px;
+  margin-left:45px;
+   height:500px;
+  width:250px;
+  
+ 
+}
+	
+}
+/*  .row div, img{
+	border:inset 1px magenta;
+}  */
