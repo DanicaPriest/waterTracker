@@ -31,15 +31,15 @@ User can see how much water they have logged since opening the app
 Add back-end element and database:<br>
 To make the application not just a static site I would connect it to a database so user information could be stored and OAuth could be implimented allowing the user to log on and access their stored information.
 
-Check local water condition:
+Check local water condition: <br>
 I would find and use an existing api to check the water conditions in the user's location and determine if the water in the local area is safe for drinking. 
 
-Gamify:
+Gamify:<br>
 Adding rewards and challenges to motivate the user to reach their daily goals.
 
 # Languages and frameworks used
 
-Wireframes-Figma I used figma (https://www.figma.com)
-Front End Languges- HTML,CSS, Javascript
-Frameworks and Libraries- Bootstrap, JQuery, Google Fonts
-Deployment- Heroku (with added php file to make the app deployable) 
+Wireframes-Figma I used figma (https://www.figma.com)<br>
+Front End Languges- HTML,CSS, Javascript<br>
+Frameworks and Libraries- Bootstrap, JQuery, Google Fonts<br>
+Deployment- Heroku (with added php file to make the app deployable) <br>
