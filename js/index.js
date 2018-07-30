@@ -26,7 +26,7 @@ $("document").ready(function(){
 	  
    
     //add new water to total
-    var addWaterNan = prompt("Add water amount in onces:", 8);
+    var addWaterNan = prompt("Add water amount in " + unit, 8);
 	addWater = parseInt(addWaterNan);
 	if (addWaterNan === null){return;}
     total = total + addWater;
