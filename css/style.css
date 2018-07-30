@@ -114,6 +114,7 @@ height: 74px;
 left: 54px;
 top: 44px;
   font-size: 22px;
+  
 }
 #logWater{
   width: 90px;
@@ -148,6 +149,8 @@ text-shadow: 1px 1px 1px var(--d-blue);
 margin-bottom:-10px;
   font-size: 36px;
   text-shadow: 1px 1px 3px var(--d-blue);
+  text-align: center;
+  
 }
 
 /*glass*/
@@ -196,6 +199,15 @@ border-radius: 43px 43px 0px 0px;
 }
 	
 }
-/*  .row div, img{
-	border:inset 1px magenta;
-}  */
+
+@media screen and (min-width:0\0) {
+	#clean, #reset, #dailyTotal, #setGoal{
+	text-align:justify;
+    color:red;}
+}
+  @media screen and (max-device-width: 480px) {
+ #setGoal, #dailyTotal { font-size:18px;  }
+    #reset { font-size:15px;  }
+     #clean{ font-size:13px;  }
+    
+}
