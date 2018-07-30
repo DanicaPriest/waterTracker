@@ -55,7 +55,7 @@ $("document").ready(function(){
     else if(goal > total){
     alert("You have had " + total + unit + " of water today. You need " + (goal - total) + " more "+ unit +" to reach your total.");
     }
-    else if(total > 299){
+    else if(unit=="oz" && total > 299){
       alert("You have had "+ total + " " + unit + " of water today. You are in danger of hyponatremia (too much water). You can stop drinking now!")}
       else if(total > goal){
         alert("You have had" + total + " " + unit + " of water today. You have exceeded your goal by " + (total - goal) + " "+ unit + " you overachiver!")
