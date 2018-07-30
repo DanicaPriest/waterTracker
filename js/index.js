@@ -31,6 +31,7 @@ $("document").ready(function(){
     addWater = parseInt(prompt("Add water amount in onces:", 8));
     total = total + addWater;
     //add new water to glass
+	if(addWater != NaN){
     var newDiv = "<div class='newWater'></div>";
     var height = 50 * glassNum;
     $("#water").append(newDiv);
@@ -39,7 +40,7 @@ $("document").ready(function(){
     $(".newWater:last").css("height",height + "px").text(dateTime).append(waterAmount);
     //add logged water to archive
     archive.push(dateTime + " - " + addWater + unit);
-    
+    }
     
   });
   //show total
