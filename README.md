@@ -1,6 +1,6 @@
 # Water Tracker
 
-App can be found at https://water-tracker.herokuapp.com/
+App can be found at https://watertracker.herokuapp.com/
 
 # Overview
 
