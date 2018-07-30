@@ -23,15 +23,19 @@ $("document").ready(function(){
   
   //log Water
   $("#logWater").click( function(){
-    if(glassNum >= 8){
-      resetGlass();
-    }
-    glassNum++;
+	  
+   
     //add new water to total
-    addWater = parseInt(prompt("Add water amount in onces:", 8));
+    var addWaterNan = prompt("Add water amount in onces:", 8);
+	addWater = parseInt(addWaterNan);
+	if (addWaterNan === null){return;}
     total = total + addWater;
     //add new water to glass
-	if(!isNaN(addWater){
+	 if(glassNum >= 8){
+      resetGlass();
+    }
+	
+    glassNum++;
     var newDiv = "<div class='newWater'></div>";
     var height = 50 * glassNum;
     $("#water").append(newDiv);
@@ -40,7 +44,7 @@ $("document").ready(function(){
     $(".newWater:last").css("height",height + "px").text(dateTime).append(waterAmount);
     //add logged water to archive
     archive.push(dateTime + " - " + addWater + unit);
-    }
+    
     
   });
   //show total
