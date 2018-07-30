@@ -28,7 +28,7 @@ User can see how much water they have logged since opening the app
 
 # Improvements and Additions
 
-Add back-end element and database:
+Add back-end element and database:<br>
 To make the application not just a static site I would connect it to a database so user information could be stored and OAuth could be implimented allowing the user to log on and access their stored information.
 
 Check local water condition:
