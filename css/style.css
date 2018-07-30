@@ -177,10 +177,13 @@ border-radius: 43px 43px 0px 0px;
   
 }
 /*media tags*/
-@media screen and (min-width: 726px){
-	
+@media screen and (min-width: 1200px){
+	#title{
+		font-size:60px;
+	}
 	
 }
+
 @media screen and (max-height:645px){
 	.bottomBars{
 		position:static;
@@ -197,14 +200,10 @@ border-radius: 43px 43px 0px 0px;
   
  
 }
-	
+
 }
 
-@media screen and (min-width:0\0) {
-	#clean, #reset, #dailyTotal, #setGoal{
-	text-align:justify;
-    color:red;}
-}
+
   @media screen and (max-device-width: 480px) {
  #setGoal, #dailyTotal { font-size:18px;  }
     #reset { font-size:15px;  }
