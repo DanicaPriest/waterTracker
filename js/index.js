@@ -31,7 +31,7 @@ $("document").ready(function(){
     addWater = parseInt(prompt("Add water amount in onces:", 8));
     total = total + addWater;
     //add new water to glass
-	if(addWater != NaN){
+	if(!isNaN(addWater){
     var newDiv = "<div class='newWater'></div>";
     var height = 50 * glassNum;
     $("#water").append(newDiv);
